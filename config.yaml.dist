@@ -1,0 +1,32 @@
+backend:
+  apikey: <apikey>
+  base: <url to report you want to extract data>
+  permlink: https://search.ub.umu.se/discovery/fulldisplay?context=L&vid=<library>:<library_code>&lang=sv&docid=alma{}
+  language: SV
+  limit: 1000
+  logLevel: 0x20
+
+  # Log level
+
+  # NONE = 0x00
+  # SUCCESS = 0x01
+  # INFO = 0x02
+  # WARNING = 0x08
+  # ERROR = 0x10
+  # DEBUG = 0x20
+
+database:
+  host: localhost
+  user: root
+  pass: pwd
+  port: 3306
+  charset: utf8mb4
+  database: None
+
+frontend:
+  library: <library name>
+  site_title: <site title>
+  site_desciption: <site description>
+  site_author: <site author>
+  site_url: <site url>
+  heading_1: <heading 1>
